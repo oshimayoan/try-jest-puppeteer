@@ -1,0 +1,12 @@
+language: node_js
+sudo: required
+node_js:
+ - "8"
+before_install:
+ - sh .circleci/setup_puppeteer.sh
+before_script:
+ - yarn start &
+script:
+ - sleep 5
+ - yarn test
+cache: yarn
