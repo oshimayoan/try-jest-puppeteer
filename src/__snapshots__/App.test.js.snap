@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without crashing 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="mock-file-jest"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    To get started, edit 
+    <code>
+      src/App.js
+    </code>
+     and save to reload.
+  </p>
+  <div>
+    <input
+      autoFocus={true}
+      data-test="name"
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+    />
+  </div>
+  <div>
+    <input
+      data-test="email"
+      onChange={[Function]}
+      placeholder="Email"
+      type="email"
+    />
+  </div>
+  <div>
+    <input
+      data-test="password"
+      onChange={[Function]}
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <div>
+    <button
+      data-test="submitButton"
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;

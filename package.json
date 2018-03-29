@@ -1,0 +1,41 @@
+{
+  "name": "try-jest-puppeteer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-env": "^2.4.1",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "chalk": "^2.3.2",
+    "faker": "^4.1.0",
+    "jest": "^22.4.3",
+    "jest-puppeteer": "^2.2.1",
+    "jest-puppeteer-preset": "^2.2.1",
+    "puppeteer": "^1.2.0",
+    "react-scripts": "^1.1.1",
+    "react-test-renderer": "^16.2.0",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "preset": "jest-puppeteer-preset",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "globalSetup": "./setup.js",
+    "globalTeardown": "./teardown.js",
+    "testEnvironment": "./puppeteer_environment.js"
+  }
+}
