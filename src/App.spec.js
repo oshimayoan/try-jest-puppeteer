@@ -8,6 +8,7 @@ describe(
     let page;
 
     beforeAll(async () => {
+      console.log('E2E_CI:', process.env.E2E_CI);
       page = await global.__BROWSER__.newPage();
       await page.goto('http://localhost:3000');
     }, 16000);

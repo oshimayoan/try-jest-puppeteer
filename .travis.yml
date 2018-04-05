@@ -10,3 +10,6 @@ script:
  - sleep 5
  - yarn test
 cache: yarn
+env:
+ global:
+  - E2E_CI=true
