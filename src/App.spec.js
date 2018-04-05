@@ -9,6 +9,7 @@ describe(
 
     beforeAll(async () => {
       console.log('E2E_CI:', process.env.E2E_CI);
+      console.log('CIRCLECI:', process.env.CIRCLECI);
       page = await global.__BROWSER__.newPage();
       await page.goto('http://localhost:3000');
     }, 16000);

@@ -16,6 +16,9 @@ jobs:
 
     working_directory: ~/repo
 
+    environment:
+      E2E_CI: "true"
+
     steps:
       - checkout
 
